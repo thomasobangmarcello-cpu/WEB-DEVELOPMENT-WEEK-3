@@ -1,0 +1,281 @@
+
+/* ==================================
+   BUDGET TRACKER - WEEK 3
+   VISUAL DESIGN CHALLENGE
+================================== */
+
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+
+/* ==================================
+   1. GENERAL STYLING
+================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #F4F7FB;
+    color: #475569;
+    line-height: 1.6;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* ==================================
+   2. HEADING CARD
+================================== */
+
+.heading-card {
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #172554;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.heading-card p {
+    color: #64748B;
+    font-size: 16px;
+}
+
+
+/* ==================================
+   3. SECTION HEADINGS
+================================== */
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #172554;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+/* ==================================
+   4. ADD EXPENSE FORM CARD
+================================== */
+
+.form-card {
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+}
+
+
+/* FORM GROUPS */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+
+/* FORM LABELS */
+
+label {
+    display: block;
+    color: #334155;
+    font-weight: 600;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+
+/* INPUT FIELDS */
+
+input,
+select {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #334155;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+
+/* INPUT FOCUS EFFECT */
+
+input:focus,
+select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* ==================================
+   5. BUTTON STYLING
+================================== */
+
+button {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #1D4ED8;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* ==================================
+   6. EXPENSE TABLE CARD
+================================== */
+
+.table-card {
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+}
+
+
+/* TABLE CONTAINER */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+}
+
+
+/* TABLE HEADER */
+
+thead {
+    background-color: #1E3A8A;
+    color: #FFFFFF;
+}
+
+th {
+    padding: 16px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* TABLE DATA */
+
+td {
+    padding: 15px 16px;
+    border-bottom: 1px solid #E2E8F0;
+    font-size: 14px;
+}
+
+
+/* ALTERNATING ROW COLORS */
+
+tbody tr:nth-child(even) {
+    background-color: #EFF6FF;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+
+/* TABLE HOVER EFFECT */
+
+tbody tr:hover {
+    background-color: #DBEAFE;
+}
+
+
+/* REMOVE LAST ROW BORDER */
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ==================================
+   7. RESPONSIVE DESIGN
+================================== */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .heading-card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .form-card,
+    .table-card {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    table {
+        min-width: 550px;
+    }
+
+}
+
+
+/* ==================================
+   END OF STYLESHEET
+================================== */
